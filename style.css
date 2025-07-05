@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 15pt;
+    background-color: #abb695;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: #a0d6cb;
+}
+.title > .img{
+    height: 100px;
+    border-radius: 50%;
+}
+.heading{
+    margin: 15px 0;
+    text-align: center;
+}
+
+.header{
+    width: 90%;
+    background: #9b896b;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+        p{
+        color: white;
+        }
+        h3{
+            text-align: center;
+        }
+}
+.info > h2{
+    color: white;
+    
+}
