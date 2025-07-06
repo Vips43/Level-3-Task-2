@@ -2,12 +2,19 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all .5s;
 }
 body {
     background-color: #abb695;
 }
 h1{
+    margin-top: 1rem;
     text-align: center;
+    background-color: white;
+    padding: 1rem 0;
+}
+h3{
+    padding: .8rem 0;
 }
 header{
     margin: 1rem;
@@ -30,7 +37,7 @@ header{
     display: flex;
     gap: .5rem;
 }
-.intro .intro-box{
+.intro .intro-box, .disc .box{
     background-color: #cbe499;
     gap: 1rem;
     padding: .5rem;
@@ -38,14 +45,50 @@ header{
     box-shadow: 1px 1px 5px grey;
 }
 .disc{
-    display: flex;
-    
+    display: grid;
+    margin-top: 1rem;
+    gap: .5rem;
 }
-
-
-
-
+.disc .discription-heading{
+    grid-column: span 3;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
 .footer{
     margin: 1rem;
     padding: 1rem;
+    border-top: 1px solid black;
+}
+.footer .btn{
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background-color: rgb(119, 119, 56);
+    cursor: pointer;
+}
+.footer a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer .contact{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #88966b;
+    width: auto;
+    gap: 10px;
+}
+
+
+@media (max-width:600px){
+    .intro{
+        flex-direction: column;
+    }
+    .disc .discription-heading{
+        grid-column: span 1;
+    }
+}
+@media (min-width: 601px) and (max-width: 900px){
+    .disc .discription-heading{
+        grid-column: span 2;
+    }
 }
