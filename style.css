@@ -91,6 +91,10 @@ footer .footer-logo img{
         text-decoration: none;
     }
 }
+.footer-right .socials{
+    display: flex;
+    gap: 1rem;
+}
 
 
  
